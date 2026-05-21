@@ -7,8 +7,13 @@ export function Catalogue() {
 
     return (
         <section id="catalogue"
-            className="bg-black grid grid-cols-5 gap-2 p-2"
-        >
+            className="bg-black grid grid-cols-1 gap-2 p-2
+                        xl:grid-cols-5
+                        lg:grid-cols-4
+                        md:grid-cols-3
+                        sm:grid-cols-2
+            "
+        >   
             {movies.map(movie => <MovieCard key={crypto.randomUUID()}
                 id={movie.id}
                 title={movie.title}

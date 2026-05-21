@@ -26,8 +26,8 @@ export function SearchBar() {
     }, [])
  
     return (
-        <header className="bg-red-800 flex flex-row justify-between items-center px-10 py-2">
-            <h1 className="text-2xl font-bold text-white">NETFLIX</h1>
+        <header className="bg-red-800 flex flex-row flex-wrap gap-2 justify-between items-center max-[490px]:justify-center px-10 py-2">
+            <h1 className="text-2xl font-bold text-white max-[490px]:hidden">NETFLIX</h1>
 
             <form className="flex flex-row gap-5">
                 <input value={input}
